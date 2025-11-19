@@ -1,3 +1,4 @@
+/* GERAL */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -5,6 +6,7 @@ body {
     padding: 0;
 }
 
+/* CABEÇALHO */
 .header {
     background-color: #ff914d;
     color: white;
@@ -12,6 +14,11 @@ body {
     padding: 2% 0;
 }
 
+h1 {
+    font-size: 50px;
+}
+
+/* CONTEÚDO */
 .content {
     text-align: center;
     padding: 20px;
@@ -24,6 +31,75 @@ body {
     margin-bottom: 20px;
 }
 
+/* LINHA DE PATINHAS */
+.linha-patinhas {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+    color: #ff914d;
+    letter-spacing: 10px;
+}
+
+/* SEÇÃO DOS ANIMAIS */
+.animais {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.animais h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff914d;
+    font-size: 32px;
+}
+
+/* CARD */
+.card {
+    display: flex;
+    gap: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #ff914d;
+}
+
+/* TEXTO DOS CARDS */
+.info h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* BOTÃO */
+.btn {
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: #ff914d;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #e07d3e;
+}
+
+/* RODAPÉ */
 .footer {
     background-color: #ff914d;
     color: white;
@@ -32,14 +108,15 @@ body {
     margin-top: 30px;
 }
 
-h1 {
-    font-size: 50px;
-}
+/* RESPONSIVO */
+@media (max-width: 700px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.linha-patinhas {
-    text-align: center;
-    font-size: 30px; /* tamanho das patinhas */
-    margin: 20px 0; /* espaço em cima e embaixo */
-    color: #ff914d; /* cor combinando com seu fundo */
-    letter-spacing: 10px; /* espaçamento entre as patinhas */
+    .card img {
+        width: 180px;
+        height: 180px;
+    }
 }
