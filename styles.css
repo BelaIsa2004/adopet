@@ -34,12 +34,12 @@ h1 {
 /* --- LINHA DE PATINHAS --- */
 .linha-patinhas {
     width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: clamp(20px, 3vw, 40px);
-    color: #ff914d;
-    letter-spacing: 0.3em;
-    text-align: center;
+    height: 40px; /* altura da linha */
+    background-image: url("data:image/svg+xml,%F0%9F%90%BE"); /* patinha */
+    background-repeat: repeat-x; /* repete infinitamente no eixo X */
+    background-size: contain; /* ajusta o tamanho das patinhas */
+    background-position: center; /* centraliza verticalmente */
+    margin: 20px 0;
 }
 
 .linha-patinhas::after {
@@ -143,6 +143,7 @@ h1 {
         margin-bottom: 15px;
     }
 }
+
 
 
 
