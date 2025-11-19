@@ -34,17 +34,15 @@ h1 {
 /* --- LINHA DE PATINHAS --- */
 .linha-patinhas {
     width: 100%;
-    height: 40px; /* altura da linha */
-    background-image: url("data:image/svg+xml,%F0%9F%90%BE"); /* patinha */
-    background-repeat: repeat-x; /* repete infinitamente no eixo X */
-    background-size: contain; /* ajusta o tamanho das patinhas */
-    background-position: center; /* centraliza verticalmente */
+    font-size: 32px;
+    text-align: center;
     margin: 20px 0;
+    overflow: hidden;
 }
 
-.linha-patinhas::after {
-    content: "🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾";
-    /* quantidade MUITO grande para parecer infinita */
+.linha-patinhas span {
+    white-space: nowrap;
+    display: inline-block;
 }
 
 /* --- SEÇÃO ANIMAIS --- */
@@ -143,3 +141,4 @@ h1 {
         margin-bottom: 15px;
     }
 }
+
