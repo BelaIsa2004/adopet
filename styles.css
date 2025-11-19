@@ -31,33 +31,25 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* --- LINHA DE PATINHAS --- */
 .linha-patinhas {
-    position: fixed;           /* Fica fixa na tela */
-    top: 150px;                /* Ajuste a altura */
+    position: fixed;       /* Fica fixa na tela */
+    top: 150px;            /* Altura da linha (ajuste se quiser) */
     left: 0;
-    width: 100%;               /* Pega a tela toda */
-    height: 40px;              /* Altura da linha */
+    width: 100%;           /* Ocupa toda a largura da tela */
+    height: 40px;
     overflow: hidden;
     z-index: 999;
-    pointer-events: none;      /* Não atrapalha cliques */
-    font-size: 30px;           /* Tamanho do emoji */
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    font-size: 30px;       /* Tamanho do emoji */
 }
 
 .linha-patinhas::before {
-    content: "🐾";             /* Emoji que você quer repetir */
+    content: "🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾"; /* Patinhas suficientes para preencher a tela */
     display: inline-block;
-    width: 100%;
     white-space: nowrap;
-    animation: repetirPatinha 5s linear infinite; /* opcional: animação */
-}
-
-@keyframes repetirPatinha {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
 }
 
 /* --- SEÇÃO ANIMAIS --- */
@@ -156,5 +148,3 @@ h1 {
         margin-bottom: 15px;
     }
 }
-
-
