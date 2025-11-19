@@ -33,12 +33,18 @@ h1 {
 
 /* --- LINHA DE PATINHAS --- */
 .linha-patinhas {
-    white-space: nowrap;            /* impede quebrar linha */
-    overflow: hidden;               /* se faltar espaço, corta mas não quebra */
-    text-align: center;
-    font-size: clamp(10px, 2vw, 30px); /* diminui só o tamanho, nunca quebra */
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: clamp(20px, 3vw, 40px);
     color: #ff914d;
-    margin: 20px 0;
+    letter-spacing: 0.3em;
+    text-align: center;
+}
+
+.linha-patinhas::after {
+    content: "🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾";
+    /* quantidade MUITO grande para parecer infinita */
 }
 
 /* --- SEÇÃO ANIMAIS --- */
@@ -137,6 +143,7 @@ h1 {
         margin-bottom: 15px;
     }
 }
+
 
 
 
