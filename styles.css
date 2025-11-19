@@ -31,20 +31,13 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* --- LINHA DE PATINHAS --- */
 .linha-patinhas {
-    width: 100%;
-    height: 40px; /* altura da linha */
-    background-image: url("data:image/svg+xml,%F0%9F%90%BE"); /* patinha */
-    background-repeat: repeat-x; /* repete infinitamente no eixo X */
-    background-size: contain; /* ajusta o tamanho das patinhas */
-    background-position: center; /* centraliza verticalmente */
-    margin: 20px 0;
-}
-
-.linha-patinhas::after {
-    content: "🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾";
-    /* quantidade MUITO grande para parecer infinita */
+    width: 100vw;            /* pega 100% da largura da tela */
+    white-space: nowrap;     /* impede de quebrar linha */
+    overflow: hidden;        /* esconde caso passe um pouco */
+    font-size: 32px;         /* aumenta as patinhas */
+    text-align: center;      /* centraliza */
+    margin: 20px 0;          /* espaço em cima e embaixo */
 }
 
 /* --- SEÇÃO ANIMAIS --- */
@@ -143,3 +136,4 @@ h1 {
         margin-bottom: 15px;
     }
 }
+
