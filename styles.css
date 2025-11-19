@@ -33,11 +33,13 @@ h1 {
 
 /* --- LINHA DE PATINHAS --- */
 .linha-patinhas {
-    text-align: center;
-    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 6px; /* espaço entre patinhas */
+    font-size: clamp(14px, 3vw, 32px); /* tamanho flexível */
     margin: 20px 0;
     color: #ff914d;
-    letter-spacing: 10px;
+    white-space: nowrap; /* impede quebrar linha */
 }
 
 /* --- SEÇÃO ANIMAIS --- */
@@ -136,5 +138,6 @@ h1 {
         margin-bottom: 15px;
     }
 }
+
 
 
