@@ -69,8 +69,8 @@ h1 {
 
 /* IMAGEM DO ANIMAL (quadrada com bordas arredondadas) */
 .card img {
-    width: 140px;
-    height: 140px;
+    width: 155px;
+    height: 155px;
     object-fit: cover;
     border-radius: 12px !important; /* garante que NÃO ficará circular */
     border: 3px solid #ff914d;
@@ -136,4 +136,5 @@ h1 {
         margin-bottom: 15px;
     }
 }
+
 
