@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ff914d;
+    color: white;
+    text-align: center;
+    padding: 2% 0;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.image {
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #ff914d;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.linha-patinhas {
+    text-align: center;
+    font-size: 30px; /* tamanho das patinhas */
+    margin: 20px 0; /* espaço em cima e embaixo */
+    color: #ff914d; /* cor combinando com seu fundo */
+    letter-spacing: 10px; /* espaçamento entre as patinhas */
+}
