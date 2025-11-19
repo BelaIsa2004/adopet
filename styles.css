@@ -33,13 +33,12 @@ h1 {
 
 /* --- LINHA DE PATINHAS --- */
 .linha-patinhas {
-    display: flex;
-    justify-content: center;
-    gap: 6px; /* espaço entre patinhas */
-    font-size: clamp(14px, 3vw, 32px); /* tamanho flexível */
-    margin: 20px 0;
+    white-space: nowrap;            /* impede quebrar linha */
+    overflow: hidden;               /* se faltar espaço, corta mas não quebra */
+    text-align: center;
+    font-size: clamp(10px, 2vw, 30px); /* diminui só o tamanho, nunca quebra */
     color: #ff914d;
-    white-space: nowrap; /* impede quebrar linha */
+    margin: 20px 0;
 }
 
 /* --- SEÇÃO ANIMAIS --- */
@@ -138,6 +137,7 @@ h1 {
         margin-bottom: 15px;
     }
 }
+
 
 
 
