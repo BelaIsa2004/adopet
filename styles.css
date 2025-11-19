@@ -1,4 +1,4 @@
-/* GERAL */
+/* --- GERAL --- */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -6,7 +6,6 @@ body {
     padding: 0;
 }
 
-/* CABEÇALHO */
 .header {
     background-color: #ff914d;
     color: white;
@@ -18,7 +17,6 @@ h1 {
     font-size: 50px;
 }
 
-/* CONTEÚDO */
 .content {
     text-align: center;
     padding: 20px;
@@ -31,7 +29,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* LINHA DE PATINHAS */
 .linha-patinhas {
     text-align: center;
     font-size: 30px;
@@ -40,13 +37,12 @@ h1 {
     letter-spacing: 10px;
 }
 
-/* SEÇÃO DOS ANIMAIS */
+/* --- SEÇÃO ANIMAIS --- */
 .animais {
     width: 100%;
     max-width: 900px;
     margin: auto;
     padding: 20px;
-    font-family: Arial, sans-serif;
 }
 
 .animais h2 {
@@ -56,36 +52,52 @@ h1 {
     font-size: 32px;
 }
 
-/* CARD */
+/* --- CARD DOS ANIMAIS --- */
 .card {
     display: flex;
+    align-items: center;
     gap: 20px;
     background: #ffffff;
+    border-radius: 15px;
     padding: 20px;
-    border-radius: 10px;
     margin-bottom: 25px;
-    align-items: center;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
+/* Imagem do animal no card */
 .card img {
-    width: 150px;
-    height: 150px;
+    width: 120px;        /* imagem pequena */
+    height: 120px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 50%;  /* deixa redonda, se quiser, ou remova para quadrado */
     border: 3px solid #ff914d;
+    flex-shrink: 0;
 }
 
-/* TEXTO DOS CARDS */
-.info h3 {
+/* Parte de informação do card */
+.card .info {
+    background: #ffffff;
+    padding: 10px 15px;
+    border-radius: 12px;
+    flex-grow: 1;
+}
+
+.card .info h3 {
     margin: 0 0 10px;
     font-size: 22px;
     color: #333;
 }
 
-/* BOTÃO */
-.btn {
-    margin-top: 10px;
+.card .info p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Botão “Saiba mais” */
+.card .info .btn {
+    margin-top: 12px;
     padding: 10px 18px;
     background: #ff914d;
     border: none;
@@ -93,13 +105,17 @@ h1 {
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.2s;
+    text-decoration: none; /* se for <a> ou botão, para tirar sublinhado */
+    display: inline-block;
 }
 
-.btn:hover {
+.card .info .btn:hover {
     background: #e07d3e;
+    transform: scale(1.05);
 }
 
-/* RODAPÉ */
+/* --- RODAPÉ --- */
 .footer {
     background-color: #ff914d;
     color: white;
@@ -108,15 +124,18 @@ h1 {
     margin-top: 30px;
 }
 
-/* RESPONSIVO */
+/* --- RESPONSIVIDADE --- */
 @media (max-width: 700px) {
     .card {
         flex-direction: column;
         text-align: center;
     }
-
     .card img {
         width: 180px;
         height: 180px;
+        margin-bottom: 15px;
+    }
+    .card .info {
+        padding: 15px;
     }
 }
